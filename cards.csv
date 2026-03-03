@@ -1,0 +1,43 @@
+id;tipo;sottotipo;nome;costo_gioco_PR;costo_mantenimento_PR;produzione_PR;produzione_PE;soglia_engagement;effetto;attivazione
+1;CEO;;CEO – Rik Omnia;0;0;1;0;0;Produce 1 PR/turno. Può pagare 4 PR per fare un'Offerta di Lavoro a un dipendente avversario (solo 1 volta per turno nel tuo turno).;automatica
+2;CEO;;CEO – Lyssandra Marketveil;0;0;1;0;0;Produce 1 PR/turno. Paga 2 PR per assegnare questo CEO a qualsiasi immobile per attivarlo (solo 1 volta per turno nel tuo turno).;automatica
+3;Asset;;Sede;4;0;1;0;0;Produce 1 PR/turno. Se ha almeno 1 Manager assegnato produce +1 PR addizionale.;automatica
+4;Asset;;Negozio Retail;3;0;0;0;0;Si attiva con 1 Sales o Commesso. Produce 1 PR/turno; con almeno 2 assegnati produce 2 PR/turno.;dipendente
+5;Asset;;Mensa;3;1;0;1;0;Produce 1 PE/turno.;automatica
+6;Asset;;Sede Commerciale;5;0;0;0;0;Si attiva con 1 Sales. Se attiva produce 2 PR/turno.;dipendente
+7;Asset;;Magazzino;2;0;1;0;0;Produce 1 PR/turno.;automatica
+8;Dipendente;Manager;Tony Kwan;4;2;2;0;4;Produce 2 PR/turno. Con engagement ≥2 rimuove 1 PR a un avversario ogni tuo turno.;automatica
+9;Dipendente;Manager;Clerin Modula;3;1;2;0;3;Produce 2 PR/turno. Se assegnata alla Sede abbassa la soglia engagement di 1. Se raggiunge la soglia produce +1 PR/turno.;automatica
+10;Dipendente;Sales;Thyraen Tradegale;4;2;2;0;5;Produce 2 PR/turno. Con engagement ≥3 può pagare 4 PR per guardare la mano di un avversario e mettere una carta in fondo al mazzo.;attivabile
+11;Dipendente;Commesso;Odri Profitara;3;1;0;0;3;Se assegnata al Negozio Retail produce 2 PR/turno. Con engagement ≥2 produce 3 PR/turno.;automatica
+12;Dipendente;Manager;Septim Allocaster;5;2;0;0;5;I Sales e Commessi assegnati producono +1 PR/turno. Con engagement ≥3 produce 1 PR/turno.;automatica
+13;Formazione;;SoP's;2;0;0;0;0;Il dipendente equipaggiato produce +1 PR/turno.;equipaggiamento
+14;Evento;;Ricorso;2;0;0;0;0;Giocabile in qualsiasi momento. Annulla un Evento prima che si attivi. Se controlli un Legale costa 2 PR in meno.;istantanea
+15;Evento;;Networking;1;0;0;0;0;Pesca 2 carte poi scarta 1 carta.;istantanea
+16;Evento;;Offerta di Lavoro;2;0;0;0;0;Aumenta il mantenimento di un dipendente di 1 PR/turno. Se il dado è pari lo prendi sotto controllo.;istantanea
+17;Evento;;Influenza Politica;3;0;0;0;0;Rimuovi dal gioco una carta Geopolitica.;istantanea
+18;Evento;;Elezioni;4;0;0;0;0;Rimuovi una Geopolitica. Se dado pari rimuovi 1 dipendente; se dispari ogni avversario paga 1 PR per carta controllata.;istantanea
+19;Evento;;Disastro Naturale;3;0;0;0;0;Se dado pari rimuovi un Asset; se dispari rimuovi un dipendente.;istantanea
+20;Geopolitica;;Inflazione;4;0;0;0;0;Finché attiva le carte degli avversari costano 1 PR in più.;permanente
+21;Asset;;Sede;4;0;1;0;0;Produce 1 PR/turno. Se ha almeno 1 Manager assegnato produce +1 PR addizionale.;automatica
+22;Asset;;Negozio Retail;3;0;0;0;0;Si attiva con 1 Sales o Commesso. Produce 1 PR/turno; con almeno 2 assegnati produce 2 PR/turno.;dipendente
+23;Asset;;Mensa;3;1;0;1;0;Produce 1 PE/turno.;automatica
+24;Asset;;Sede Commerciale;5;0;0;0;0;Si attiva con 1 Sales. Se attiva produce 2 PR/turno.;dipendente
+25;Asset;;Magazzino;2;0;1;0;0;Produce 1 PR/turno.;automatica
+26;Dipendente;Manager;Tony Kwan;4;2;2;0;4;Produce 2 PR/turno. Con engagement ≥2 rimuove 1 PR a un avversario ogni tuo turno.;automatica
+27;Dipendente;Manager;Tony Kwan;4;2;2;0;4;Produce 2 PR/turno. Con engagement ≥2 rimuove 1 PR a un avversario ogni tuo turno.;automatica
+28;Dipendente;Manager;Clerin Modula;3;1;2;0;3;Produce 2 PR/turno. Se assegnata alla Sede abbassa la soglia engagement di 1. Se raggiunge la soglia produce +1 PR/turno.;automatica
+29;Dipendente;Manager;Clerin Modula;3;1;2;0;3;Produce 2 PR/turno. Se assegnata alla Sede abbassa la soglia engagement di 1. Se raggiunge la soglia produce +1 PR/turno.;automatica
+30;Dipendente;Sales;Thyraen Tradegale;4;2;2;0;5;Produce 2 PR/turno. Con engagement ≥3 può pagare 4 PR per guardare la mano di un avversario e mettere una carta in fondo al mazzo.;attivabile
+31;Dipendente;Commesso;Odri Profitara;3;1;0;0;3;Se assegnata al Negozio Retail produce 2 PR/turno. Con engagement ≥2 produce 3 PR/turno.;automatica
+32;Dipendente;Commesso;Odri Profitara;3;1;0;0;3;Se assegnata al Negozio Retail produce 2 PR/turno. Con engagement ≥2 produce 3 PR/turno.;automatica
+33;Dipendente;Manager;Septim Allocaster;5;2;0;0;5;I Sales e Commessi assegnati producono +1 PR/turno. Con engagement ≥3 produce 1 PR/turno.;automatica
+34;Formazione;;SoP's;2;0;0;0;0;Il dipendente equipaggiato produce +1 PR/turno.;equipaggiamento
+35;Formazione;;SoP's;2;0;0;0;0;Il dipendente equipaggiato produce +1 PR/turno.;equipaggiamento
+36;Evento;;Ricorso;2;0;0;0;0;Giocabile in qualsiasi momento. Annulla un Evento prima che si attivi. Se controlli un Legale costa 2 PR in meno.;istantanea
+37;Evento;;Networking;1;0;0;0;0;Pesca 2 carte poi scarta 1 carta.;istantanea
+38;Evento;;Networking;1;0;0;0;0;Pesca 2 carte poi scarta 1 carta.;istantanea
+39;Evento;;Offerta di Lavoro;2;0;0;0;0;Aumenta il mantenimento di un dipendente di 1 PR/turno. Se il dado è pari lo prendi sotto controllo.;istantanea
+40;Evento;;Disastro Naturale;3;0;0;0;0;Se dado pari rimuovi un Asset; se dispari rimuovi un dipendente.;istantanea
+41;Evento;;Elezioni;4;0;0;0;0;Rimuovi una Geopolitica. Se dado pari rimuovi 1 dipendente; se dispari ogni avversario paga 1 PR per carta controllata.;istantanea
+42;Evento;;Influenza Politica;3;0;0;0;0;Rimuovi dal gioco una carta Geopolitica.;istantanea

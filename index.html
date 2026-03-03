@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>CEO Capital Empires: Origins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- SETUP OVERLAY -->
+  <div id="setup-area" class="overlay" style="display:none;"></div>
+
+  <!-- GAME OVER OVERLAY -->
+  <div id="game-over" class="overlay" style="display:none;">
+    <div class="overlay-box">
+      <div class="crown">👑</div>
+      <h1>Vittoria!</h1>
+      <p><span id="winner-name"></span> ha vinto la partita!</p>
+      <button onclick="location.reload()" class="btn gold">Nuova Partita</button>
+    </div>
+  </div>
+
+  <!-- GAME BOARD -->
+  <div id="board">
+
+    <!-- CPU TOP BAR -->
+    <div class="top-bar bar">
+      <div class="bar-slot">
+        <div class="mini-pile" id="opp-removed"></div>
+        <div class="slot-label">Carte rimosse</div>
+      </div>
+      <div class="bar-slot ceo-slot">
+        <div id="opp-ceo" class="ceo-card-slot"></div>
+        <div class="slot-label">CEO CPU</div>
+      </div>
+      <div class="bar-slot">
+        <div class="dice-area">
+          <span class="score-gem pr">PR <b id="opp-pr">5</b></span>
+          <span class="score-gem" style="background:rgba(71,212,192,0.1);color:#47d4c0;border:1px solid rgba(71,212,192,0.2);">🃏 <b id="opp-hand-count">0</b></span>
+        </div>
+        <div class="slot-label">CPU Stats</div>
+      </div>
+    </div>
+
+    <!-- CPU FIELD -->
+    <div class="field-zone opp-zone">
+      <span class="zone-tag">Campo CPU</span>
+      <div id="enemy-field" class="card-row"></div>
+    </div>
+
+    <!-- EVENT ZONE (center) -->
+    <div class="event-zone">
+      <span class="zone-tag">Area evento</span>
+      <div id="event-area" class="card-row event-row"></div>
+
+      <button id="btnDraw" class="orb orb-left" title="Pesca carta" disabled>
+        <span class="orb-inner draw"></span>
+        <span class="orb-label">pesca</span>
+      </button>
+      <button id="btnNextPhase" class="orb orb-right" title="Termina turno">
+        <span class="orb-inner advance"></span>
+        <span class="orb-label">Fine turno</span>
+      </button>
+    </div>
+
+    <!-- PLAYER FIELD -->
+    <div class="field-zone player-zone">
+      <span class="zone-tag">Il tuo campo</span>
+      <div id="field" class="card-row"></div>
+    </div>
+
+    <!-- INFO STRIP -->
+    <div class="info-strip">
+      <span class="info-chip pr-chip">PR <b id="pr">5</b></span>
+      <span class="info-chip pe-chip">PE <b id="pe-count">0</b></span>
+      <span class="info-chip phase-chip" id="phase">Setup</span>
+      <span class="info-chip turn-chip">T<b id="turn">0</b></span>
+      <span class="info-chip name-chip" id="currentPlayerName">Giocatore 1</span>
+    </div>
+
+    <!-- PLAYER BOTTOM BAR -->
+    <div class="bottom-bar bar">
+      <div class="bar-slot">
+        <div class="mini-pile deck-pile" id="deck-display">
+          <span class="pile-count" id="deckCount">0</span>
+        </div>
+        <div class="slot-label">Mazzo</div>
+      </div>
+      <div class="bar-slot ceo-slot">
+        <div id="player-ceo" class="ceo-card-slot"></div>
+        <div class="slot-label">Il tuo CEO</div>
+      </div>
+      <div class="bar-slot">
+        <div class="mini-pile" id="player-removed"></div>
+        <div class="slot-label">Carte rimosse</div>
+      </div>
+    </div>
+
+    <!-- HAND -->
+    <div class="hand-tray">
+      <span class="zone-tag">La tua mano</span>
+      <div id="hand" class="hand-row"></div>
+    </div>
+  </div>
+
+  <!-- LOG -->
+  <details class="log-drawer">
+    <summary>📋 Log di gioco</summary>
+    <div id="log" class="log-body"></div>
+  </details>
+
+  <span id="opp-name" hidden>CPU</span>
+  <span id="pe-info" hidden></span>
+  <span id="opp-pe-info" hidden></span>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
